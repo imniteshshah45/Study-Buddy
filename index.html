@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Buddy - Your Learning Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./src/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
 </head>
@@ -22,7 +22,7 @@
                         <a href="#"><i class="fas fa-th-large"></i> <span>Dashboard</span></a>
                     </li>
                     <li>
-                        <a href="../courses/index.html"><i class="fas fa-book"></i> <span>All Courses</span></a>
+                        <a href="./src/../courses/index.html"><i class="fas fa-book"></i> <span>All Courses</span></a>
                     </li>
                     <li>
                         <a href="#"><i class="fas fa-comment"></i> <span>Messages</span>
@@ -474,7 +474,7 @@
             
             // Check if user is logged in
             if (!userData.isLoggedIn) {
-                window.location.href = 'login.html';
+                window.location.href = './src/login.html';
                 return;
             }
             
@@ -527,7 +527,7 @@
             logoutBtn.addEventListener('click', function(e) {
                 e.preventDefault();
                 localStorage.removeItem('userData');
-                window.location.href = 'login.html';
+                window.location.href = './src/login.html';
             });
 
             // Close modal when clicking outside
